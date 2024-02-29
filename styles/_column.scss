@@ -1,0 +1,15 @@
+.column {
+    @include section-flex-container;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .column {
+        align-items: center;
+    }
+}

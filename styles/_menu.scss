@@ -1,0 +1,38 @@
+.menu {
+    &__item {
+        font-size: 1.375rem;
+        font-weight: 400;
+        color: $text-color;
+    }
+    &__item:not(:last-child)::after {
+        content: " ";
+        background: $text-color;
+        width: 1.5px;
+        height: 16px;
+        margin: auto 25px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        &__item {
+            font-size: $small-font;
+        }
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .menu {
+        &__item:not(:last-child)::after {
+            content: " ";
+            background: $text-color;
+            width: 16px;
+            height: 1.5px;
+            margin: 5px auto;
+            display: block;
+        }
+    }
+
+}

@@ -1,0 +1,17 @@
+.social-networks {
+    &__fb {
+        @include icon (url("../icons/fb.svg"));
+    }
+    &__twitter {
+        @include icon (url("../icons/twitter.svg"));
+    }
+    &__inst {
+        @include icon (url("../icons/inst.svg"));
+    }
+    a:not(:last-child) {
+        margin-right: 40px;
+    }
+    a:hover {
+        transform:scale(1.5);
+    }
+}
